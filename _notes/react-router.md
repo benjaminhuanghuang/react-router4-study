@@ -5,6 +5,8 @@ react-router-native
 react-router-redux 
 react-router-config
 
+$ yarn add react-router-dom
+
 
 ## Adding routing features. 
 Instead of rendering the Home component, we import Router and Route and use them to render the component.
