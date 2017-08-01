@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
+const history = createBrowserHistory();
 
 // App modules
 import Submit from './common/submit';
@@ -24,8 +26,8 @@ ReactDOM.render(
                   </div>
                   <div id="navbar" className="navbar-collapse collapse">
                     <ul className="nav navbar-nav">
-                      <li className="active"><NavLink to="/">Home</NavLink></li>
-                      <li><NavLink to="/submit">Submit a Recipe</NavLink></li>
+                      <li><NavLink exact activeClassName="activeNav" to="/">Home</NavLink></li>
+                      <li><NavLink activeClassName="activeNav" to="/submit">Submit a Recipe</NavLink></li>
                     </ul>
                   </div>
                 </div>
