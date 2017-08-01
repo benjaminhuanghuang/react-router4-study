@@ -23,6 +23,8 @@ render(
 ```
 
 ## History
+import createBrowserHistory from 'history/createBrowserHistory';
+const history = createBrowserHistory();
 
 ## Parameter
 

@@ -33,7 +33,7 @@ ReactDOM.render(
                 </div>
               </nav>
             <Route exact path="/" component={Home}/>
-            <Route path="/submit" component={Submit}/>
+            <Route path="/submit" component={Submit} history={history}/>
           </div> 
      </Router>,
     document.getElementById('app')
