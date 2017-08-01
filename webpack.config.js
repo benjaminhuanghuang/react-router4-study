@@ -12,7 +12,7 @@ var config = {
     },
     devServer: {
         contentBase: BUILD_DIR,
-        inline: true, // autorefresh
+        inline: false, 
         port: 8080 // development port server
     },
     module: {
