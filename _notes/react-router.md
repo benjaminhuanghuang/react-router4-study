@@ -7,6 +7,10 @@ react-router-config
 
 $ yarn add react-router-dom
 
+在 React 的使用中，我们一般要引入两个包，react 和 react-dom，那么 react-router 和 react-router-dom 是不是两个都要引用呢？
+他们两个只要引用一个就行了，不同之处就是后者比前者多出了 <Link> <BrowserRouter> 这样的 DOM 类组件。
+因此我们只需引用 react-router-dom 这个包就行了. 如果搭配 redux ，还需要使用 react-router-redux。
+
 
 ## Adding routing features. 
 Instead of rendering the Home component, we import Router and Route and use them to render the component.
