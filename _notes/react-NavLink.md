@@ -8,3 +8,4 @@ to
 
 
 ## Active class
+   <li><NavLink exact activeClassName="activeNav" to="/">Home</NavLink></li>

@@ -27,7 +27,8 @@ render(
     document.getElementById('app')
 );
 ```
-
+ A <Router> may have only one child element
+ 
 ## History
 import createBrowserHistory from 'history/createBrowserHistory';
 const history = createBrowserHistory();
