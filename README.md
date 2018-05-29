@@ -1,5 +1,8 @@
 # React Router4 study project
 
+## References
+- React Router v4: The Complete Guide
+    - https://www.sitepoint.com/react-router-v4-complete-guide/
 
 ## Install
 React Router has been broken into three packages: 

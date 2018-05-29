@@ -1,5 +1,8 @@
 const path = require('path');
 
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 const APP_DIR = path.resolve(__dirname, 'src');
 const BUILD_DIR = path.resolve(__dirname, 'public');
 
@@ -15,15 +18,39 @@ var config = {
         inline: false,
         port: 8080 // development port server
     },
+    mode: 'development',
     module: {
-        loaders: [{
-            test: /\.jsx?$/, // search for js files 
-            exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-                presets: ['es2015', 'react'] // use es2015 and react
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
+            },
+            {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: "html-loader",
+                        options: { minimize: true }
+                    }
+                ]
+            },
+            {
+                test: /\.css$/,
+                use: [MiniCssExtractPlugin.loader, "css-loader"]
+            },
+            {
+                test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: "[name].[ext]"
+                    }
+                }
             }
-        }]
-    }
+        ]
+    },
 }
 module.exports = config;
