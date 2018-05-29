@@ -12,7 +12,7 @@ var config = {
     },
     devServer: {
         contentBase: BUILD_DIR,
-        inline: false, 
+        inline: false,
         port: 8080 // development port server
     },
     module: {
