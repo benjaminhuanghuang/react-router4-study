@@ -1,7 +1,6 @@
-1. install react-bootstrap
+## install react-bootstrap or Copy bootstrap css file
 
-2. Copy bootstrap css file
+##  Copy nav code Header.js
+    from http://getbootstrap.com/examples/navbar/
 
-3. Copy nav code from http://getbootstrap.com/examples/navbar/ to App class in index.js
-
-4. Change "class" to "className"
+## Change "class" to "className"
